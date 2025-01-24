@@ -38,6 +38,10 @@ public class Task {
         this.updatedAt = LocalDateTime.now();
     }
 
+    public Status getStatus() {
+        return status; 
+    }
+
     @Override
     public String toString() {
         return "id: " + id + ", description:" + description.strip() + ", status:" + status + ", createdAt:" + createdAt.format(formatter) + ", updatedAt:" + updatedAt.format(formatter);
