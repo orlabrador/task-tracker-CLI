@@ -78,5 +78,6 @@ public class TaskApp {
                 break;
 
         }
+        taskController.saveTasks();
     }
 }
